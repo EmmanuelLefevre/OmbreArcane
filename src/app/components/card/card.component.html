@@ -3,11 +3,13 @@
       [style.backgroundImage]="'url(' + patternPath + ')'">
 
     <div class="card-header">
-      @for (color of card.mana; track $index) {
-        <img [src]="getManaIconPath(color)"
-            class="mana-icon"
-            [alt]="color">
-      }
+      <div class="mana-container">
+        @for (color of card.mana; track $index) {
+          <img [src]="getManaIconPath(color)"
+               class="mana-icon"
+               [alt]="color">
+        }
+      </div>
       <span class="card-title">{{ card.name }}</span>
     </div>
 

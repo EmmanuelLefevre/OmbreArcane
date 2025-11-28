@@ -13,42 +13,45 @@
   overflow: hidden;
   .card-header {
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
     position: absolute;
     height: 25px;
-    top: 5.5%;
-    left: 6%;
+    top: 13.6%;
+    left: 27%;
     right: 6%;
-    gap: 8px;
+    gap: 6.3px;
     z-index: 10;
-    .mana-icon {
-      width: 18px;
-      height: 18px;
-      filter: drop-shadow(1px 1px 1px rgba(0,0,0,0.5));
+    .mana-container {
+      display: flex;
+      .mana-icon {
+        width: 15px;
+        height: 15px;
+        filter: drop-shadow(1px 1px 1px rgba(0,0,0,0.5));
+      }
     }
     .card-title {
-      color: #d1d1d1;
+      color: #2F2418;
       font-size: 15px;
       font-weight: bold;
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
       font-variant: small-caps;
+      text-align: left;
+      width: 100%;
+      white-space: nowrap;
+      text-overflow: ellipsis;
     }
   }
   .card-img {
     position: absolute;
     height: 43%;
-    top: 11%;
-    left: 7%;
+    top: 24%;
+    left: 25%;
     right: 7%;
-    background-color: #000;
-    box-shadow: inset 0 0 10px #000;
     z-index: 1;
     img {
       display: block;
-      width: 100%;
-      height: 100%;
+      width: 71.2%;
+      height: 87%;
       object-fit: cover;
     }
   }
@@ -56,11 +59,11 @@
     display: flex;
     align-items: center;
     position: absolute;
-    font-size: 13px;
+    font-size: 10px;
     font-weight: bold;
     color: #fff;
-    top: 56%;
-    left: 8%;
+    top: 63.3%;
+    left: 25.5%;
     right: 8%;
     text-shadow: 1px 1px 2px #000;
     z-index: 10;
@@ -69,57 +72,66 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: stretch;
     position: absolute;
-    font-size: 12px;
+    font-size: 9px;
+    text-align: left;
     line-height: 1.35;
-    top: 62%;
+    top: 52%;
     bottom: 12%;
-    left: 9%;
+    left: 24.2%;
     right: 9%;
-    padding: 4px;
+    padding: 0 4px;
     gap: 6px;
     z-index: 10;
     .ability-line {
-      .ability {
-
-      }
+      display: block;
+      width: 100%;
+      margin-bottom: 2px;
+      white-space: normal;
+      word-wrap: break-word;
+      overflow-wrap: break-word;
       .ability-keyword {
         color: #a83e00;
         font-weight: 800;
+      }
+      .ability {
+        display: inline;
+        color: #1a1a1a;
       }
     }
   }
   .stat-container {
     position: absolute;
     color: white;
-    font-size: 24px;
+    font-size: 18px;
     font-weight: bold;
-    height: 40px;
-    bottom: 3%;
-    left: 6%;
-    right: 6%;
-    text-shadow: 2px 2px 0 #000, -1px -1px 0 #000;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
     pointer-events: none;
     z-index: 20;
-    .strength-stat {
+    .strength-stat, .defense-stat {
       display: flex;
       justify-content: center;
       align-items: center;
       position: absolute;
-      height: 40px;
-      width: 45px;
+      color: white;
+      font-size: 20px;
+      font-weight: 800;
+      height: 38px;
+      width: 43px;
       left: 0;
-      bottom: 0;
+      bottom: 8.5%;
+      text-shadow: 2px 2px 0 #000, -1px -1px 0 #000, 0 0 5px rgba(0,0,0,1);
+    }
+    .strength-stat {
+      left: 22.5%;
     }
     .defense-stat {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      position: absolute;
-      height: 40px;
-      width: 45px;
-      bottom: 0;
-      right: 0;
+      right: 23.5%;
+      left: auto;
     }
   }
 }
