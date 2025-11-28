@@ -1,202 +1,291 @@
 [
   {
     "name": "Félin érudit",
-    "mana": "black",
+    "img_name": "felin_erudit.png",
+    "mana": ["black"],
     "pattern": "black_pattern",
-    "type": "chat",
+    "type": "Chat",
     "strength": 1,
     "defense": 1,
-    "ability_keyword": "Dernier souffle",
-    "ability": "Piochez 1 carte."
+    "abilities": [
+      {
+        "keyword": "Dernier souffle",
+        "text": "Piochez 1 carte."
+      }
+    ]
   },
   {
     "name": "Zombie déchu",
-    "mana": "black",
+    "img_name": "zombie_dechu.png",
+    "mana": ["black"],
     "pattern": "black_pattern",
-    "type": "zombie",
+    "type": "Zombie",
     "strength": 1,
     "defense": 1,
-    "ability_keyword": "Dernier souffle",
-    "ability": "Mettez un marqueur de déclin sur une créature ciblée."
+    "abilities": [
+      {
+        "keyword": "Dernier souffle",
+        "text": "Mettez un marqueur de déclin sur une créature ciblée."
+      }
+    ]
   },
   {
     "name": "Rat maudit",
-    "mana": "black",
+    "img_name": "rat_maudit.png",
+    "mana": ["black"],
     "pattern": "black_pattern",
-    "type": "rat",
+    "type": "Rat",
     "strength": 1,
     "defense": 1,
-    "ability_keyword": "Dernier souffle",
-    "ability": ""
+    "abilities": [
+      {
+        "keyword": "Dernier souffle"
+      }
+    ]
   },
   {
     "name": "Scribe arcane",
-    "mana": "blue",
+    "img_name": "scribe_arcane.png",
+    "mana": ["blue"],
     "pattern": "blue_pattern",
-    "type": "sorcier",
+    "type": "Sorcier",
     "strength": 0,
     "defense": 1,
-    "ability_keyword": "Action",
-    "ability": "Payez {blue} {white} : Piochez 1 carte."
+    "abilities": [
+      {
+        "keyword": "Action",
+        "text": "Payez {blue} {white} : Piochez 1 carte."
+      }
+    ]
   },
   {
     "name": "Écaille astrale",
-    "mana": "blue",
+    "img_name": "ecaille_astrale.png",
+    "mana": ["blue"],
     "pattern": "blue_pattern",
-    "type": "poisson",
+    "type": "Poisson",
     "strength": 1,
     "defense": 3,
-    "ability_keyword": "Deuxième ligne de défense",
-    "ability": ""
+    "abilities": [
+      {
+        "keyword": "Deuxième ligne de défense",
+        "text": "Regardez la main d'un adversaire."
+      }
+    ]
   },
   {
     "name": "Lamantin paisible",
-    "mana": "blue",
+    "img_name": "lamantin_paisible.png",
+    "mana": ["blue"],
     "pattern": "blue_pattern",
-    "type": "lamantin",
+    "type": "Lamantin",
     "strength": 0,
     "defense": 4,
-    "ability_keyword": "",
-    "ability": ""
+    "abilities": []
   },
   {
     "name": "Eclaireur des mers",
-    "mana": "blue",
+    "img_name": "eclaireur_des_mers.png",
+    "mana": ["blue"],
     "pattern": "blue_pattern",
-    "type": "humain, corsaire",
+    "type": "Humain, Corsaire",
     "strength": 1,
     "defense": 1,
-    "ability_keyword": "Déploiement",
-    "ability": "Regardez la main d’un adversaire."
+    "abilities": [
+      {
+        "keyword": "Déploiement",
+        "text": "Regardez la main d'un adversaire."
+      }
+    ]
   },
   {
     "name": "Fureur moribonde",
-    "mana": "red",
+    "img_name": "fureur_moribonde.png",
+    "mana": ["red"],
     "pattern": "red_pattern",
-    "type": "demon",
+    "type": "Démon",
     "strength": 1,
     "defense": 1,
-    "ability_keyword": "Déploiement rapide; Dernier souffle",
-    "ability": ";Inflige des blessures égales à son attaque à une cible."
+    "abilities": [
+      {
+        "keyword": "Déploiement rapide; Dernier souffle",
+        "text": ";Inflige des blessures égales à son attaque à une cible."
+      }
+    ]
   },
   {
     "name": "Esprit incendiaire",
-    "mana": "red",
+    "img_name": "esprit_incendiaire.png",
+    "mana": ["red"],
     "pattern": "red_pattern",
-    "type": "élémental",
+    "type": "Elémentaire",
     "strength": 1,
     "defense": 1,
-    "ability_keyword": "Assaut",
-    "ability": "Cette créature inflige 1 blessure à une cible."
+    "abilities": [
+      {
+        "keyword": "Assaut",
+        "text": "Cette créature inflige 1 blessure à une cible"
+      }
+    ]
   },
   {
     "name": "Nain ascendant",
-    "mana": "red",
+    "img_name": "nain_ascendant.png",
+    "mana": ["red"],
     "pattern": "red_pattern",
-    "type": "nain",
+    "type": "Nain",
     "strength": 1,
     "defense": 1,
-    "ability_keyword": "Assaut",
-    "ability": "Cette créature gagne un marqueur de puissance."
+    "abilities": [
+      {
+        "keyword": "Assaut",
+        "text": "Cette créature gagne un marqueur de puissance."
+      }
+    ]
   },
   {
     "name": "La Coquine du Vallon",
-    "mana": "white",
+    "img_name": "la_coquine_du_vallon.png",
+    "mana": ["white"],
     "pattern": "white_pattern",
-    "type": "humain",
+    "type": "Humain",
     "strength": 1,
     "defense": 1,
-    "ability_keyword": "Action (1/ tour)",
-    "ability": "Payez {white} : La créature ciblée ne peut pas bloquer ce tour-ci."
+    "abilities": [
+      {
+        "keyword": "Action (1/ tour)",
+        "text": "Payez {white} : La créature ciblée ne peut pas bloquer ce tour-ci."
+      }
+    ]
   },
   {
     "name": "Prêtre de la lumière",
-    "mana": "white",
+    "img_name": "pretre_de_la_lumiere.png",
+    "mana": ["white"],
     "pattern": "white_pattern",
-    "type": "humain, clerc",
+    "type": "Humain, Clerc",
     "strength": 0,
     "defense": 2,
-    "ability_keyword": "Action (1/ tour)",
-    "ability": "Gagnez 2 points de vie."
+    "abilities": [
+      {
+        "keyword": "Action (1/ tour)",
+        "text": "Gagnez 2 points de vie."
+      }
+    ]
   },
   {
     "name": "Prêtresse du voile lumineux",
-    "mana": "white",
+    "img_name": "pretresse_du_voile_lumineux.png",
+    "mana": ["white"],
     "pattern": "white_pattern",
-    "type": "humain, clerc",
+    "type": "Humain, Clerc",
     "strength": 0,
     "defense": 2,
-    "ability_keyword": "Riposte (1/ tour)",
-    "ability": "Payez {white} : Prévenez les 2 prochaines blessures qui seraient infligées à une créature ciblée ce tour-ci."
+    "abilities": [
+      {
+        "keyword": "Riposte (1/ tour)",
+        "text": "Payez {white} : Prévenez les 2 prochaines blessures qui seraient infligées à une créature ciblée ce tour-ci."
+      }
+    ]
   },
   {
     "name": "Apprenti forgeron",
-    "mana": "metal",
+    "img_name": "apprenti_forgeron.png",
+    "mana": ["metal"],
     "pattern": "metal_pattern",
-    "type": "humain",
+    "type": "Humain",
     "strength": 1,
     "defense": 1,
-    "ability_keyword": "Fin de tour",
-    "ability": "Mettez un marqueur de puissance sur une créature ciblée."
+    "abilities": [
+      {
+        "keyword": "Fin de tour",
+        "text": "Mettez un marqueur de puissance sur une créature ciblée."
+      }
+    ]
   },
   {
     "name": "Scutigère furtif",
-    "mana": "metal",
+    "img_name": "scutigere_furtif.png",
+    "mana": ["metal"],
     "pattern": "metal_pattern",
-    "type": "insect",
+    "type": "Insecte",
     "strength": 1,
     "defense": 1,
-    "ability_keyword": "Imblocable",
-    "ability": ""
+    "abilities": [
+      {
+        "keyword": "Imblocable"
+      }
+    ]
   },
   {
     "name": "Oiseau mécanique",
-    "mana": "metal",
+    "img_name": "oiseau_mecanique.png",
+    "mana": ["metal"],
     "pattern": "metal_pattern",
-    "type": "oiseau",
+    "type": "Oiseau",
     "strength": 1,
     "defense": 1,
-    "ability_keyword": "Aérien",
-    "ability": ""
+    "abilities": [
+      {
+        "keyword": "Aérien"
+      }
+    ]
   },
   {
     "name": "Serpent venimeux",
-    "mana": "green",
+    "img_name": "serpent_venimeux.png",
+    "mana": ["green"],
     "pattern": "green_pattern",
-    "type": "serpent",
+    "type": "Serpent",
     "strength": 1,
     "defense": 1,
-    "ability_keyword": "Coup mortel",
-    "ability": ""
+    "abilities": [
+      {
+        "keyword": "Coup mortel"
+      }
+    ]
   },
   {
     "name": "Sentinelle des branches",
-    "mana": "green",
+    "img_name": "sentinelle_des_branches.png",
+    "mana": ["green"],
     "pattern": "green_pattern",
-    "type": "elfe",
+    "type": "Elfe",
     "strength": 1,
     "defense": 3,
-    "ability_keyword": "Archerie",
-    "ability": ""
+    "abilities": [
+      {
+        "keyword": "Archerie"
+      }
+    ]
   },
   {
     "name": "Prêtresse sylvestre",
-    "mana": "green",
+    "img_name": "pretresse_sylvestre.png",
+    "mana": ["green"],
     "pattern": "green_pattern",
-    "type": "elfe",
+    "type": "Elfe",
     "strength": 1,
     "defense": 1,
-    "ability_keyword": "",
-    "ability": "A chaque fois qu’une autre créature arrive sur le champ de bataille, vous gagnez 1 point de vie."
+    "abilities": [
+      {
+        "text": "A chaque fois qu'une autre créature arrive sur le champ de bataille, vous gagnez 1 point de vie."
+      }
+    ]
   },
   {
     "name": "Dryade prismatique",
-    "mana": "green",
+    "img_name": "dryade_prismatique.png",
+    "mana": ["green"],
     "pattern": "green_pattern",
-    "type": "dryade",
+    "type": "Dryade",
     "strength": 1,
     "defense": 1,
-    "ability_keyword": "Action (1/ tour)",
-    "ability": "Ajoutez un mana de la couleur de votre choix."
+    "abilities": [
+      {
+        "keyword": "Action (1/ tour)",
+        "text": "Ajoutez un mana de la couleur de votre choix."
+      }
+    ]
   }
 ]
