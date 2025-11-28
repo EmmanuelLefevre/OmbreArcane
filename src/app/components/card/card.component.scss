@@ -1,0 +1,125 @@
+.card-pattern {
+  position: relative;
+  // font-family: $font-main;
+  color: #1a1a1a;
+  // width: $card-width;
+  // height: calc(#{$card-width} * #{$card-ratio});
+  width: 300px;
+  height: calc(300px * 1.39);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  border-radius: 14px;
+  box-shadow: -5px 5px 15px rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+  .card-header {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    height: 25px;
+    top: 5.5%;
+    left: 6%;
+    right: 6%;
+    gap: 8px;
+    z-index: 10;
+    .mana-icon {
+      width: 18px;
+      height: 18px;
+      filter: drop-shadow(1px 1px 1px rgba(0,0,0,0.5));
+    }
+    .card-title {
+      color: #d1d1d1;
+      font-size: 15px;
+      font-weight: bold;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      font-variant: small-caps;
+    }
+  }
+  .card-img {
+    position: absolute;
+    height: 43%;
+    top: 11%;
+    left: 7%;
+    right: 7%;
+    background-color: #000;
+    box-shadow: inset 0 0 10px #000;
+    z-index: 1;
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  .creature-type {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    font-size: 13px;
+    font-weight: bold;
+    color: #fff;
+    top: 56%;
+    left: 8%;
+    right: 8%;
+    text-shadow: 1px 1px 2px #000;
+    z-index: 10;
+  }
+  .ability-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    font-size: 12px;
+    line-height: 1.35;
+    top: 62%;
+    bottom: 12%;
+    left: 9%;
+    right: 9%;
+    padding: 4px;
+    gap: 6px;
+    z-index: 10;
+    .ability-line {
+      .ability {
+
+      }
+      .ability-keyword {
+        color: #a83e00;
+        font-weight: 800;
+      }
+    }
+  }
+  .stat-container {
+    position: absolute;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    height: 40px;
+    bottom: 3%;
+    left: 6%;
+    right: 6%;
+    text-shadow: 2px 2px 0 #000, -1px -1px 0 #000;
+    pointer-events: none;
+    z-index: 20;
+    .strength-stat {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      height: 40px;
+      width: 45px;
+      left: 0;
+      bottom: 0;
+    }
+    .defense-stat {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      height: 40px;
+      width: 45px;
+      bottom: 0;
+      right: 0;
+    }
+  }
+}

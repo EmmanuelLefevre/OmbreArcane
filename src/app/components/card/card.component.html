@@ -1,0 +1,44 @@
+@if (card) {
+  <div class="card-pattern"
+      [style.backgroundImage]="'url(' + patternPath + ')'">
+
+    <div class="card-header">
+      @for (color of card.mana; track $index) {
+        <img [src]="getManaIconPath(color)"
+            class="mana-icon"
+            [alt]="color">
+      }
+      <span class="card-title">{{ card.name }}</span>
+    </div>
+
+    <div class="card-img">
+      <img [src]="illustrationPath"
+          [alt]="card.name">
+    </div>
+
+    <div class="creature-type">
+      Créature : {{ card.type }}
+    </div>
+
+    <div class="ability-container">
+      @for (ab of card.abilities; track $index) {
+        <div class="ability-line">
+          @if (ab.keyword) {
+            <strong class="ability-keyword">{{ ab.keyword }} - </strong>
+          }
+          <span class="ability">{{ ab.text }}</span>
+        </div>
+      }
+    </div>
+
+    <div class="stat-container">
+      <div class="strength-stat">
+        {{ card.strength }}
+      </div>
+      <div class="defense-stat">
+        {{ card.defense }}
+      </div>
+    </div>
+
+  </div>
+}
