@@ -1,0 +1,6 @@
+@for (card of cardsList; track card.name) {
+  <app-card [card]="card"></app-card>
+}
+@empty {
+  <p>Aucune carte à afficher pour le moment.</p>
+}
