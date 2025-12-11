@@ -47,11 +47,18 @@
   },
   "lint-staged": {
     "src/**/*.{ts,html}": [
-      "eslint --fix",
-      "prettier --write"
+      "eslint --max-warnings=0",
+      "prettier --check"
     ],
     "src/**/*.{css,scss,json,md}": [
-      "prettier --write"
+      "prettier --check"
+    ],
+    "*.{js,cjs,mjs}": [
+      "eslint --max-warnings=0",
+      "prettier --check"
+    ],
+    "*.{yaml,yml}": [
+      "prettier --check"
     ]
   }
 }
