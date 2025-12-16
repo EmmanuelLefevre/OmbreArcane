@@ -12,12 +12,13 @@ import { Card } from '../../_interfaces/card.model';
 
 export class CardComponent {
   private readonly iconFormat = 'png';
+  private readonly imgFormat = 'png';
   private readonly patternFormat = 'png';
 
   @Input() card!: Card;
 
   get illustrationPath(): string {
-    return `/cards-img/${this.card.img_name}`;
+    return `/cards-img/${this.card.img_name}.${this.imgFormat}`;
   }
 
   get patternPath(): string {
